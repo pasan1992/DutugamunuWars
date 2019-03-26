@@ -337,7 +337,8 @@ public class GameSystem : MonoBehaviour
         // Is Final level
         if(level >=3)
         {
-            loadFinalWar();
+            //loadFinalWar();
+            LevelManager.LoadNextLevelSelectionMenu();
         }
         // Is Next war level
         else

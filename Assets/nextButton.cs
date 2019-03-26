@@ -6,6 +6,8 @@ public class nextButton : MonoBehaviour {
 
     // Use this for initialization
     public Text result;
+
+    public Text[] questionTexts;
 	void Start () {
 	
 	}
@@ -20,5 +22,11 @@ public class nextButton : MonoBehaviour {
 	{
 		textcontrol.randQuestion = -1;
         result.text = "";
+        textcontrol.questionSelected = false;
+
+        foreach (Text text in questionTexts)
+        {
+            text.color = Color.red;
+        }
     }
 }

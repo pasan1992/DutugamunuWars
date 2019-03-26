@@ -349,6 +349,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   result: {fileID: 0}
+  questionTexts: []
 --- !u!1 &232448528
 GameObject:
   m_ObjectHideFlags: 0
@@ -577,6 +578,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   result: {fileID: 947890399}
+  questionTexts:
+  - {fileID: 2116533901}
+  - {fileID: 1498726825}
+  - {fileID: 688114329}
+  - {fileID: 1561581275}
 --- !u!1 &366781844
 GameObject:
   m_ObjectHideFlags: 0

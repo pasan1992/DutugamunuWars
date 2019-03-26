@@ -86,7 +86,8 @@ public class GameManager : MonoBehaviour {
 
             if (correctAnswers > 4)
             {
-                SceneManager.LoadScene("Quiz2", LoadSceneMode.Single);
+                // SceneManager.LoadScene("Quiz2", LoadSceneMode.Single);
+                LevelManager.LoadNextLevelSelectionMenu();
             }
         } else
 		{
@@ -106,7 +107,8 @@ public class GameManager : MonoBehaviour {
 
             if (correctAnswers > 4)
             {
-                SceneManager.LoadScene("Quiz2", LoadSceneMode.Single);
+                // SceneManager.LoadScene("Quiz2", LoadSceneMode.Single);
+                LevelManager.LoadNextLevelSelectionMenu();
             }
         } else
 		{

@@ -40,6 +40,7 @@ public class EndGameScreen : MonoBehaviour
 
     public void restartGame()
     {
+        LevelManager.resetLevels();
         GameSystem.restartLevel = true;
         SceneManager.LoadScene("Menu", LoadSceneMode.Single);
     }

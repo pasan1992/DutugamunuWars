@@ -6,9 +6,8 @@ public class MainMenu : MonoBehaviour {
 
 	public void PlayGame()
 	{
-        GameManager.correctAnswers = 0;
-
-        SceneManager.LoadScene ("Quiz1",LoadSceneMode.Single);
+        //SceneManager.LoadScene (SceneManager.GetActiveScene ().buildIndex + 1);
+        LevelManager.LoadNextLevelSelectionMenu();
 	}
 
 	public void QuitGame ()

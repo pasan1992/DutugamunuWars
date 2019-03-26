@@ -23,8 +23,11 @@ public class text1 : MonoBehaviour {
 
     public void Click()
 	{
-		textcontrol.selectedAnswer = gameObject.name;
-		textcontrol.choiceSelected = "y";
-
+        if(!textcontrol.questionSelected)
+        {
+            textcontrol.selectedAnswer = gameObject.name;
+            textcontrol.choiceSelected = "y";
+            this.GetComponent<Text>().color = Color.blue;
+        }
 	}
 }

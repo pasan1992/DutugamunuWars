@@ -18,6 +18,8 @@ public class textcontrol : MonoBehaviour {
 
 	public static int randQuestion=-1;
 
+    public static bool questionSelected = false;
+
     // Use this for initialization
     private int questionCount = 0;
 	void Start () {
@@ -41,16 +43,19 @@ public class textcontrol : MonoBehaviour {
 		if(choiceSelected == "y")
         {
 
-			choiceSelected = "n"; 
+			choiceSelected = "n";
+            questionSelected = true;
 
-			if (correctAnswer [randQuestion] == selectedAnswer)
+
+            if (correctAnswer [randQuestion] == selectedAnswer)
             {
 
 				resultObj.GetComponent<Text> ().text = "CORRECT! Click Next To Continue";
                 questionCount++;
                 if (questionCount > 4)
                 {
-                    SceneManager.LoadScene("Selection", LoadSceneMode.Single);
+                    //SceneManager.LoadScene("Selection", LoadSceneMode.Single);
+                    LevelManager.LoadNextLevelSelectionMenu();
                 }
             } 
 			else
