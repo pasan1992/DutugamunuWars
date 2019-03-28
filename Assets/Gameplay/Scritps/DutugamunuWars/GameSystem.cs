@@ -428,5 +428,10 @@ public class GameSystem : MonoBehaviour
         SceneManager.LoadScene("FinalWar", LoadSceneMode.Single);
     }
 
+    public void exitGame()
+    {
+        Application.Quit();
+    }
+
     #endregion
 }
